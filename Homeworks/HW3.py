@@ -1,4 +1,3 @@
-
 def prime_first(number): # asal sayı hesaplayan 1. fonksiyonum.
     if number !=1 and number !=0:
         for i in range(2, number):

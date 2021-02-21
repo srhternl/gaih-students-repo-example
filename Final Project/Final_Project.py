@@ -48,7 +48,7 @@ class Nohut_Tarif(Tarifler):
     def nohut_koy(self):
         print("Süzülmüş nohutları tencereye koyup kavurmaya devam edelim.")
 
-    def start(self):
+    def basla(self):
         self.yemege_basla()
         self.nohut_hazirla()
         self.nohut_suzgec()
@@ -85,7 +85,7 @@ class Kuru_Fasulye_Tarif(Tarifler):
     def karistirma(self):
         print("Tencereye koyulan malzemeleri 1-2 dakika karıştıralım.")
 
-    def start(self):
+    def basla(self):
         self.yemege_basla()
         self.fasulye_hazirla()
         self.malzemeleri_hazırla()
@@ -118,7 +118,7 @@ class Ezogelin_Corbasi_Tarif(Tarifler):
     def pisirme(self):
         print("Yaklaşık 35 dakika kadar ve kırmızı mercimekler yumuşayana kadar pişirelim")
 
-    def start(self):
+    def basla(self):
         self.yemege_basla()
         self.tenecere_ekle()
         self.su_ekle()
@@ -143,14 +143,14 @@ while choice != '4':
     choice = input("Seçiminizi Yapınız: ")
 
     if choice == "1":
-        rice_recipe = Nohut_Tarif("Nohut \n")
-        rice_recipe.start()
+        nohut_tarif = Nohut_Tarif("Nohut \n")
+        nohut_tarif.basla()
     elif choice == "2":
-        chicken_saute_recipe = Kuru_Fasulye_Tarif("Kuru Fasulye \n")
-        chicken_saute_recipe.start()
+        kuru_fasulye_tarif = Kuru_Fasulye_Tarif("Kuru Fasulye \n")
+        kuru_fasulye_tarif.basla()
     elif choice == "3":
-        chicken_soup_recipe = Ezogelin_Corbasi_Tarif("Ezogelin Çorbası \n ")
-        chicken_soup_recipe.start()
+        ezogelin_corbasi_tarif = Ezogelin_Corbasi_Tarif("Ezogelin Çorbası \n ")
+        ezogelin_corbasi_tarif.basla()
     elif choice == "4":
         quit()
     else:

@@ -132,26 +132,26 @@ class Ezogelin_Corbasi_Tarif(Tarifler):
         self.bitir()
 
 
-choice = '0'
-while choice != '4':
-    print("\nMain Choice: Choose 1 of 3 choices")
+secim = '0'
+while secim != '4':
+    print("\nAna Seçim: Yemek Seçimi")
     print("Nohut Tarifi")
     print("Kuru Fasulye Tarifi")
     print("Ezogelin Çorbası Tarifi")
     print("Programdan Çıkış")
 
-    choice = input("Seçiminizi Yapınız: ")
+    secim = input("Seçiminizi Yapınız: ")
 
-    if choice == "1":
+    if secim == "1":
         nohut_tarif = Nohut_Tarif("Nohut \n")
         nohut_tarif.basla()
-    elif choice == "2":
+    elif secim == "2":
         kuru_fasulye_tarif = Kuru_Fasulye_Tarif("Kuru Fasulye \n")
         kuru_fasulye_tarif.basla()
-    elif choice == "3":
+    elif secim == "3":
         ezogelin_corbasi_tarif = Ezogelin_Corbasi_Tarif("Ezogelin Çorbası \n ")
         ezogelin_corbasi_tarif.basla()
-    elif choice == "4":
+    elif secim == "4":
         quit()
     else:
         print("Yanlış seçim yaptınız.\n")
